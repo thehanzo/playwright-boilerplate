@@ -1,0 +1,46 @@
+{
+  "name": "playwright-boilerplate",
+  "version": "1.0.0",
+  "description": "Search Inventory Tool - Playwright POM TS framework",
+  "main": "index.js",
+  "scripts": {
+    "debug": "cross-env ENV=prod PWDEBUG=1 DEBUG=pw:api playwright test",
+    "test:ui": "cross-env ENV=prod playwright test --ui",
+    "test:staging": "cross-env ENV=staging playwright test",
+    "test:prod": "cross-env ENV=prod playwright test",
+    "prettier:format": "npx prettier 'src/**/*.ts' --write",
+    "eslint:format": "npx eslint --fix 'src/**/*.ts'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Toyota-Motor-North-America/lxc-playwright-boilerplate.git"
+  },
+  "keywords": [],
+  "author": "Jose Quesada",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Toyota-Motor-North-America/lxc-playwright-boilerplate.git"
+  },
+  "homepage": "https://github.com/Toyota-Motor-North-America/lxc-playwright-boilerplate.git",
+  "devDependencies": {
+    "@eslint/js": "^8.2.0",
+    "@playwright/test": "^1.47.1",
+    "@types/node": "^22.5.4",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^18.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.11.0",
+    "typescript-eslint": "7.18.0",
+    "winston": "^3.14.2",
+    "yaml": "^2.5.1"
+  },
+  "dependencies": {
+    "@typescript-eslint/parser": "^7.0.0",
+    "dotenv": "^16.0.3",
+    "eslint-plugin-import": "^2.25.2",
+    "prettier": "^3.3.3"
+  }
+}

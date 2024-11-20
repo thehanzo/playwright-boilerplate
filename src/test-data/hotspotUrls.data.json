@@ -1,0 +1,17 @@
+{
+    "models": [
+      "/models/UX/models#model_technology",
+      "/models/UX-hybrid#model_technology",
+      "/models/NX#model_technology",
+      "/models/NX-hybrid#model_technology",
+      "/models/RX#model_technology",
+      "/models/RX-hybrid#model_technology",
+      "/models/GX#model_technology",
+      "/models/LX#model_technology",
+      "/models/RC#model_technology",
+      "/models/RCF#model_technology",
+      "/models/LC#model_technology",
+      "/models/LC-hybrid#model_technology",
+      "/models/LC-convertible#model_technology"
+    ]
+  }

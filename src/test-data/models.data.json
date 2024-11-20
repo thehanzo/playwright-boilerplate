@@ -1,0 +1,60 @@
+{
+    "gas": [
+        {
+            "url": "RX",
+            "model": "RX",
+            "MSRP": "49,950",
+            "year": "2024"
+        },
+        {
+            "url": "NX",
+            "model": "NX",
+            "MSRP": "41,765",
+            "year": "2025"
+        },
+        {
+            "url": "TX",
+            "model": "TX",
+            "MSRP": "78,050",
+            "year": "2024"
+        },
+        {
+            "url": "GX",
+            "model": "GX",
+            "MSRP": "64,250",
+            "year": "2024"
+        }
+    ],
+    "hybrid": [
+        {
+            "url": "UX-hybrid",
+            "model": "UX",
+            "MSRP": "37,490",
+            "year": "2025"
+        },
+        {
+            "url": "NX-PHEV",
+            "model": "NX",
+            "MSRP": "62,415",
+            "year": "2025"
+        },
+        {
+            "url": "RZ",
+            "model": "RZ",
+            "MSRP": "55,175",
+            "year": "2024"
+        },
+        {
+            "url" : "TX500h",
+            "model": "TX",
+            "MSRP": "69,350",
+            "year": "2024"
+        },
+        {
+            "url" : "LC-hybrid",
+            "model": "LC",
+            "MSRP": "103,100",
+            "year": "2024"
+        }
+    ]
+  }
