@@ -1,0 +1,68 @@
+apiVersion: v1alpha
+kind: playwright
+defaults:
+  timeout: 15m
+showConsoleLog: true
+sauce:
+  region: us-west-1
+  concurrency: 9
+  metadata:
+    tags:
+      - smoke
+    build: "Search Inventory Tool"
+  retries: 2
+  visibility: team
+  sauceignore: .sauceignore
+playwright:
+  version: 1.45.0
+  configFile: playwright.config.ts
+#=================================
+suites:
+- name: Zipgate validations - Desktop
+  smartRetry:
+    failedOnly: true
+  platformName: "Windows 11"
+  testMatch:
+    - "src/tests/zipgate.spec.ts"
+  params:
+    browserName: chrome
+    project: chromium
+    tags:
+      - "@zipgate"
+    backtrace: true
+
+- name: Zipgate validations - Mobile
+  platformName: "Windows 11"
+  testMatch:
+    - "src/tests/zipgate.spec.ts"
+  params:
+    browserName: chrome
+    project: mobile chrome
+    tags:
+      - "@zipgate"
+    backtrace: true
+
+#===========================
+rootDir: ./
+# reporters:
+#   json:
+#     enabled: true
+#     filename: saucectl-report.json
+# artifacts:
+#   download:
+#     match:
+#     - '*'
+#     when: never
+#     directory: ./artifacts
+npm:
+  dependencies:
+    - "@playwright/test"
+    - "typescript"   
+    - "ts-node"
+    - "cross-env"
+    - "winston"
+    - "fs-extra"
+    - "dotenv"
+
+env:
+  SAUCE_SYNC_WEB_ASSETS: "true"
